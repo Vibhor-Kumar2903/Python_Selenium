@@ -12,10 +12,10 @@ driver.maximize_window()
 driver.get("https://www.facebook.com/login/")
 
 # By CSS_SELECTOR
-# tag + id -   e.g. (html_tag#id = input#id = #id)
-# tag + class - e.g. (html_tag.classValue = input.classValue = .classValue)
-# tag + attribute - e.g. (html_tag[attribute=value] = input[name="email"] = [name="email"])
-# tag + class + attribute - e.g. (html_tag.classValue[attribute=value] = input.inputtext[name="email"] = .inputtext[name="email"])
+# tag_name + id -   e.g. (html_tag#id = input#id = #id)
+# tag_name + class - e.g. (html_tag.classValue = input.classValue = .classValue)
+# tag_name + attribute - e.g. (html_tag[attribute=value] = input[name="email"] = [name="email"])
+# tag_name + class + attribute - e.g. (html_tag.classValue[attribute=value] = input.inputtext[name="email"] = .inputtext[name="email"])
 
 
 # tag_name#id
