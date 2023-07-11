@@ -7,17 +7,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.maximize_window()
-driver.implicitly_wait(20)
+driver.implicitly_wait(10)
 
-original_title = "OrangeHRM"
-driver.get("https://opensource-demo.orangehrmlive.com")
+driver.get("https://www.google.com/")
 
-driver.find_element(By.LINK_TEXT, "OrangeHRM, Inc").click()
+search_box = driver.find_element(By.NAME, "q")
+search_box.send_keys("selenium")
+search_box.submit()
 
-driver.close()
-time.sleep(5)
-
-driver.quit()
-
-
-
+driver.find_element(By.XPATH, "//h3[text()='Selenium']").click()
+page_title = driver.title
+print(page_title)
