@@ -48,5 +48,6 @@ for i in range(len(check_box)):
         print(f"{check_box[i].get_attribute('id')} is de_selected.")
 
 
+# select_few_checkbox
 
 
