@@ -41,13 +41,20 @@ print(f"Selected checkbox : {selected}")
 
 # deselect
 for i in range(len(check_box)):
-    check_box[i].click()
-    time.sleep(1)
+    if check_box[i].is_selected():
+        check_box[i].click()
+        time.sleep(1)
 
     if not check_box[i].is_selected():
         print(f"{check_box[i].get_attribute('id')} is de_selected.")
 
 
-# select_few_checkbox
+# select_first_two_checkbox
+for i in range(len(check_box)):
+    if i < 2:
+        check_box[i].click()
 
-
+# deselect_first_two_checkbox
+for i in range(len(check_box)):
+    if i < 2:
+        check_box[i].click()
