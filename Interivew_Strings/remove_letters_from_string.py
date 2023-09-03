@@ -2,7 +2,7 @@
 
 def remove_letters(string):
 
-    removed_str = string.translate({ord(i): None for i in "a"})
+    removed_str = string.translate({ord(i): None for i in "ain"})
     print(f"removed_str :: {removed_str}")
 
 

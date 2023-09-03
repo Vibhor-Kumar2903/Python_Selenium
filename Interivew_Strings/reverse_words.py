@@ -22,8 +22,8 @@ def reverse_words_not_string_1(string):
     print("========== REVERSE_WORDS ==========")
     print(f"Given string ::  \n{string}")
 
-    string = string.split(" ")
-    reverse = string[::-1]
+    word = string.split(" ")
+    reverse = word[::-1]
     reverse_string = ""
 
     for w in reverse:
@@ -36,11 +36,10 @@ def reverse_words_not_string_2(string):
     print("========== REVERSE_WORDS ==========")
     print(f"Given string ::  \n{string}")
 
-    string = string.split(" ")
-    reverse = string[::-1]
-    reverse_string = " "
+    word = string.split(" ")
+    reverse = word[::-1]
 
-    outcome = reverse_string.join(reverse)
+    outcome = " ".join(reverse)
 
     print(f"Reverse ::  {outcome}")
 
